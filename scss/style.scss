@@ -1,7 +1,126 @@
+$font-family: "Heebo", sans-serif;
+$max-width: 858px;
+$header-height: 50px;
+$header-height-desktop: 90px;
+$offset: 22px;
+$finger-size: 46px;
+$border-radius: 2px;
+$border-radius-card: 4px;
+$color-primary: #ff6464;
+$color-light-blue: #edf7fa;
+$color-blue-link: #00a8cc;
+$color-black: #21243d;
+$color-light: #8695a4;
+$offset-top-bottom: 22px;
+
 *,
 *::after,
 *::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+}
+
+.container {
+  height: 100%;
+  width: 90%;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.header {
+  height: $header-height;
+}
+
+.header-menu {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.nav {
+  //display: none;
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  transition: 0.2s;
+  transform: translateY(-100%);
+  padding-bottom: 15px;
+  background-color: #fff;
+
+  .nav-list {
+    list-style: none;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: $color-black;
+  }
+
+  .accent-color {
+    color: $color-primary;
+  }
+}
+
+.show-nav {
+  transform: translateY(0);
+  top: 100%;
+}
+
+.icon {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: $header-height-desktop;
+    padding-top: $offset;
+    padding-bottom: $offset;
+
+    .nav-toggle {
+      display: none;
+    }
+
+    .nav {
+      position: static;
+      transform: none;
+      justify-content: flex-end;
+      align-items: center;
+      padding-bottom: 0;
+
+      .nav-list {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .nav-item + .nav-item {
+        margin-left: 32px;
+      }
+    }
+  }
 }
