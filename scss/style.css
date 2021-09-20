@@ -294,4 +294,26 @@ section {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
+  .blog-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .blog-title-link {
+    display: inline-block;
+  }
+  .blog-card {
+    padding: 10px 15px 20px;
+  }
+  .blog-card-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .blog-card + .blog-card {
+    margin-left: 10px;
+  }
 }
