@@ -11,6 +11,14 @@ body {
   font-family: "Heebo", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 .container {
   height: 100%;
   width: 90%;
@@ -65,13 +73,8 @@ button {
   background-color: #fff;
 }
 
-.nav .nav-list {
-  list-style: none;
-}
-
 .nav .nav-link {
   font-size: 1.2rem;
-  text-decoration: none;
   font-weight: 700;
   color: #21243d;
 }
@@ -173,6 +176,63 @@ section {
 
 .hero-wrapper .hero-content-button-resume:hover {
   opacity: 0.7;
+}
+
+.blog {
+  background-color: #edf7fa;
+}
+
+.blog-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.blog-title-link {
+  display: none;
+}
+
+.blog-card {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 2px;
+}
+
+.blog-card-wrapper {
+  padding-bottom: 10px;
+}
+
+.blog-card-title {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.blog-card-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-card-type-item + .blog-card-type-item {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #ccc;
+}
+
+.blog-card-content {
+  font-size: 0.95rem;
 }
 
 @media (min-width: 768px) {

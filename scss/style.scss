@@ -25,6 +25,14 @@ body {
   font-family: $font-family;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 .container {
   height: 100%;
   width: 90%;
@@ -71,13 +79,8 @@ button {
   padding-bottom: 15px;
   background-color: #fff;
 
-  .nav-list {
-    list-style: none;
-  }
-
   .nav-link {
     font-size: 1.2rem;
-    text-decoration: none;
     font-weight: 700;
     color: $color-black;
   }
@@ -163,6 +166,59 @@ section {
       &:hover {
         opacity: 0.7;
       }
+    }
+  }
+}
+
+// BLOG SECTION
+
+.blog {
+  background-color: $color-light-blue;
+
+  &-title {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &-link {
+      display: none;
+    }
+  }
+
+  &-card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: $border-radius;
+
+    &-wrapper {
+      padding-bottom: 10px;
+    }
+
+    &-title {
+      color: #000;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    &-type {
+      display: flex;
+      justify-items: space-between;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      &-item + &-item {
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: 1px solid #ccc;
+      }
+    }
+
+    &-content {
+      font-size: 0.95rem;
     }
   }
 }
