@@ -235,6 +235,60 @@ section {
   font-size: 0.95rem;
 }
 
+.featured-title {
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+}
+
+.featured-card {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.featured-card-photo {
+  margin-bottom: 10px;
+}
+
+.featured-card-photo img {
+  width: 100%;
+  height: 250px;
+}
+
+.featured-card-content-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.featured-card-content-detail {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.featured-card-content-detail-date {
+  font-size: 0.9rem;
+  padding: 0.25em 0.5em;
+  color: #fff;
+  background-color: #8695a4;
+  border-radius: 10px;
+  letter-spacing: 3px;
+}
+
+.featured-card-content-detail-info {
+  color: #ccc;
+}
+
+.featured-card-content-detail-info + .featured-card-content-detail-info {
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+.featured-card-content-explanation {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 @media (min-width: 768px) {
   .header {
     height: 90px;
