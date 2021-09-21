@@ -20,11 +20,30 @@ ul {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
 .container {
   height: 100%;
   width: 90%;
   max-width: 858px;
   margin: 0 auto;
+}
+
+section {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .header {
@@ -42,18 +61,6 @@ ul {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-img {
-  max-width: 100%;
-}
-
-button {
-  background: transparent;
-  border: 0;
-  position: relative;
-  z-index: 1;
-  cursor: pointer;
 }
 
 .nav {
@@ -99,13 +106,6 @@ button {
   stroke: currentColor;
   fill: currentColor;
   cursor: pointer;
-}
-
-section {
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .hero-wrapper {
