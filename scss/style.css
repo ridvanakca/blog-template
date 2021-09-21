@@ -370,4 +370,23 @@ section {
   .blog-card + .blog-card {
     margin-left: 10px;
   }
+  .featured-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .featured-card-photo {
+    width: 30%;
+  }
+  .featured-card-photo img {
+    height: 200px;
+    width: 100%;
+  }
+  .featured-card-content {
+    margin-left: 10px;
+    width: 70%;
+  }
+  .featured-card-content-title {
+    font-size: 1.9rem;
+  }
 }

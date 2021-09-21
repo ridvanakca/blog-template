@@ -358,4 +358,25 @@ section {
       margin-left: 10px;
     }
   }
+
+  .featured {
+    &-card {
+      display: flex;
+      &-photo {
+        width: 30%;
+        img {
+          height: 200px;
+          width: 100%;
+        }
+      }
+      &-content {
+        margin-left: 10px;
+        width: 70%;
+
+        &-title {
+          font-size: 1.9rem;
+        }
+      }
+    }
+  }
 }
