@@ -26,6 +26,7 @@ body {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -78,6 +79,7 @@ button {
   transform: translateY(-100%);
   padding-bottom: 15px;
   background-color: #fff;
+  z-index: 1;
 
   .nav-link {
     font-size: 1.2rem;
@@ -278,6 +280,27 @@ section {
         margin-bottom: 10px;
       }
     }
+  }
+}
+
+// FOOTER
+
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  &-social-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-social-icon-item + &-social-icon-item {
+    margin-left: 20px;
+  }
+
+  &-rights {
+    text-align: center;
+    margin-top: 20px;
   }
 }
 
